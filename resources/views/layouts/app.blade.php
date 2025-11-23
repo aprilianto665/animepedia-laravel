@@ -47,22 +47,22 @@
         <nav aria-label="Main navigation">
             <ul class="flex justify-center list-none gap-2 md:gap-4 flex-wrap">
                 <li>
-                    <a href="{{ route('home') }}" class="text-white no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider hover:text-amber-400">
+                    <a href="{{ route('home') }}" class="no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider {{ ($active ?? '') === 'home' ? 'text-amber-400' : 'text-white hover:text-amber-400' }}">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-white no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider hover:text-amber-400">
+                    <a href="#" class="no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider {{ ($active ?? '') === 'anime' ? 'text-amber-400' : 'text-white hover:text-amber-400' }}">
                         Anime
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-white no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider hover:text-amber-400">
+                    <a href="#" class="no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider {{ ($active ?? '') === 'favorites' ? 'text-amber-400' : 'text-white hover:text-amber-400' }}">
                         Favorites
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-white no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider hover:text-amber-400">
+                    <a href="#" class="no-underline font-medium text-[0.8rem] md:text-[0.9rem] py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 uppercase tracking-wider {{ ($active ?? '') === 'profile' ? 'text-amber-400' : 'text-white hover:text-amber-400' }}">
                         Profile
                     </a>
                 </li>
