@@ -6,6 +6,43 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    /* Custom Colors */
+    --color-dark: #1a1a1a;
+    --color-dark-light: #2c2c2c;
+    --color-gray-border: #e9ecef;
+    --color-gray-border-hover: #dee2e6;
+    --color-gray-text: #495057;
+    --color-gray-label: #6c757d;
+    --color-gray-bg: #f8f9fa;
+
+    /* Custom Box Shadows */
+    --shadow-header: 0 4px 16px rgba(0,0,0,0.15);
+    --shadow-card: 0 4px 12px rgba(0,0,0,0.05);
+    --shadow-card-hover: 0 8px 24px rgba(0,0,0,0.1);
+
+    /* Custom Font Sizes */
+    --font-size-h1: 2.5rem;
+    --font-size-h1-mobile: 1.8rem;
+    --font-size-japanese: 1.5rem;
+    --font-size-japanese-mobile: 1rem;
+    --font-size-nav: 0.9rem;
+    --font-size-nav-mobile: 0.8rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h2-mobile: 0.9rem;
+    --font-size-status: 0.75rem;
+    --font-size-status-mobile: 0.6rem;
+    --font-size-score: 0.9rem;
+    --font-size-score-mobile: 0.75rem;
+    --font-size-body: 0.9rem;
+    --font-size-label: 0.8rem;
+    --font-size-value: 0.95rem;
+    --font-size-footer: 0.85rem;
+}
+
+/* Text shadow utility */
+@utility text-shadow-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
